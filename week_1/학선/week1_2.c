@@ -11,9 +11,9 @@ void init(tree* x)
 	x->le = NULL;
 	x->ri = NULL;
 }
-void gettree(tree* x, int n)
+void gettree(tree* x)
 {
-	if (n == 1) return;
+
 	int root, left, right;
 	scanf("%d %d %d", &root, &left, &right);
 	x->r = root;
@@ -22,14 +22,14 @@ void gettree(tree* x, int n)
 		init(y);
 		y->r = left;
 		x->le = y;
-		gettree(y, n - 1);
+		gettree(y);
 	}
 	if (right != 0) {
 		tree* y = (tree*)malloc(sizeof(tree));
 		init(y);
 		y->r = right;
 		x->ri = y;
-		gettree(y, n - 1);
+		gettree(y);
 	}
 }
 void findtree(tree* x, char* str, int s, int cnt)
@@ -48,7 +48,7 @@ int main()
 	int n, s;
 	char str[101];
 	scanf("%d", &n);
-	gettree(x, n);
+	gettree(x);
 	scanf("%d", &s);
 	for (int i = 0; i < s; i++) {
 		getchar();
