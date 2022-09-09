@@ -37,7 +37,7 @@ void delete(NODE*list, int r) {
 			return 0;
 		}
 	}
-	
+
 	p->prev->next = p->next;
 	p->next->prev = p->prev;
 }
@@ -45,12 +45,12 @@ void get(NODE* list, int r) {
 	NODE* p = list;
 	for (int i = 0; i < r; i++) {
 		p = p->next;
-		if (p ->next == NULL) {
+		if (p->next == NULL) {
 			printf("invalid position");
 			return 0;
 		}
 	}
-	
+
 	printf("%c", p->elem);
 }
 
