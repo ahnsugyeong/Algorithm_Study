@@ -98,7 +98,6 @@ int main() {
 		printf("\n");
 	}
 }
-
 /*
 9
 A 1 D
