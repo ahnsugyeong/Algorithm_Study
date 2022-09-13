@@ -7,7 +7,7 @@
      <td align="center"><a href="https://github.com/jisun0415"><img src="https://github.com/jisun0415.png" width="100px;" alt=""/><br/><sub><b>오지선</b></sub></a><br/></td>
      <td align="center"><a href="https://github.com/hhsun0101"><img src="https://github.com/hhsun0101.png" width="100px;" alt=""/><br/><sub><b>이학선</b></sub></a><br/></td>
       <td align="center"><a href="https://github.com/heeheehoho"><img src="https://github.com/heeheehoho.png" width="100px;" alt=""/><br/><sub><b>정희호</b></sub></a><br/></td>
-     <td align="center"><a href="https://github.com/wonseo"><img src="https://github.com/wonseo.png" width="100px;" alt=""/><br/><sub><b>최원서</b></sub></a><br/></td>
+     <td align="center"><a href="https://github.com/cwonseo"><img src="https://github.com/cwonseo.png" width="100px;" alt=""/><br/><sub><b>최원서</b></sub></a><br/></td>
   </tr>
 </table>
 
