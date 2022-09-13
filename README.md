@@ -1,6 +1,6 @@
 # Algorithm Study
 
-## MEMBER 
+### MEMBER 
 <table>
   <tr>
      <td align="center"><a href="https://github.com/ahnsugyeong"><img src="https://github.com/ahnsugyeong.png" width="100px;" alt=""/><br/><sub><b>안수경</b></sub></a><br/></td>
@@ -13,8 +13,115 @@
 
 <br>
 
+- - -
+### HOMEWORK
+<table>
+<tr>
+<td>week</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+<td>16</td>
+</tr>
 
-## RULE
+<tr>
+<td>지선</td>
+<td>✅</td>
+<td>✅</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>학선</td>
+<td>✅</td>
+<td>✅</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>희호</td>
+<td>✅</td>
+<td>✅</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>원서</td>
+<td>✅</td>
+<td>✅</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+</table>
+
+<br>
+
+- - -
+### RULE
 
 1. 무단결석 or 인정할 수 없는 결석 시 (2만원)
 
