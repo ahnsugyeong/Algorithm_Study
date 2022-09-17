@@ -1,43 +1,86 @@
-/*
-	1. 내림차순 정렬 함수 sort
-	2. 매수 인원 출력하는 함수 buy
-*/
 #include <stdio.h>
-#include <stdlib.h>
-void sort(int *arr,int N) {//내림차순 정렬
-	int max = 0,tmp,index;
-	for (int i = 1; i < N; i++) {
-		for (int j = i; j < N; j++) {
-			if (arr[j] > max) {
-				max = arr[j];
-				index  = j;
-			}
-		}
-		tmp = arr[i];
-		arr[i] = arr[index];
-		arr[index] = tmp;		
-		max = 0;
+int H[101] = { 0 }, n = 0;
+void print() {
+	for (int i = 1; i <= n; i++) {
+		printf(" %d", H[i]);
 	}
 }
-void buy(int *arr, int N) {
-	int buycnt=0;//매수인원
-	if (N == 1) printf("0");//후보가 1명 매수 X
-	else {
-		while (arr[0] <= arr[1]) {//arr[0] -> 다솜 arr[1] -> 최다득표 후보자
-			arr[0]++; arr[1]--; buycnt++; //매수 진행
-			sort(arr, N);//내림차순 정렬
-		}
-		printf("%d", buycnt);
+void upheap(int i) {
+	int tmp;
+	while (1) {//루트 or 값 작거나 같으면 break
+		if (i == 1)break;
+		else if (H[i] <= H[i / 2]) break;
+		tmp = H[i];
+		H[i] = H[i / 2];
+		H[i / 2] = tmp;//swap
+		i = i / 2;// 현재 노드 갱신	
+
 	}
 }
+
+void downheap(int i) {
+	int tmp;
+	while (1) {//자식값이 더 클동안
+		if (H[i] > H[i * 2] && H[i] > H[i * 2 + 1]) break;
+		else if (i * 2 > n) break;
+		if (H[i * 2] >= H[i * 2 + 1]) {//왼쪽 자식 더 크면
+			tmp = H[i];
+			H[i] = H[i * 2];
+			H[i * 2] = tmp;//swap
+			i = i * 2;// 현재 노드 갱신	
+		}
+		else if (H[i * 2] < H[i * 2 + 1]) {//오른쪽 자식 더 클때
+			tmp = H[i];
+			H[i] = H[i * 2 + 1];
+			H[i * 2 + 1] = tmp;//swap
+			i = i * 2 + 1;// 현재 노드 갱신
+		}
+	}
+}
+
+void in(int key) {
+	n += 1;
+	H[n] = key;
+	upheap(n);
+	printf("0");
+}
+int remov() {
+	int key;
+	key = H[1];
+	H[1] = H[n];
+	n -= 1;
+	downheap(1);
+	return key;
+}
+
+
 int main() {
-	int cand,*vote;
-	scanf("%d",&cand);//후보자 수
-	vote = (int*)malloc(sizeof(int)*cand);//후보자 수만큼 할당
-	for (int i = 0; i < cand; i++) {
-		scanf("%d", &vote[i]);//받은 표수 입력
+	char input;
+	int key;
+	while (1) {
+		scanf("%c", &input);
+		if (input == 'i') {
+			scanf("%d", &key);
+			in(key);
+		}
+		else if (input == 'd') { printf("%d", remov()); }
+		else if (input == 'p') { print(); }
+		else if (input == 'q') { break; }
+		printf("\n");
 	}
-	sort(vote, cand);//내림차순 정렬
-	buy(vote, cand);//매수인원 출력
-	free(vote);
 }
+/*
+i 5
+i 15
+i 10
+i 20
+i 30
+i 25
+p
+d
+i 31
+i 29
+d
+p
+q
+*/
