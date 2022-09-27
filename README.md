@@ -40,8 +40,8 @@
 <td>지선</td>
 <td>✅</td>
 <td>✅</td>
-<td></td>
-<td></td>
+<td>✅</td>
+<td>✅</td>
 <td></td>
 <td></td>
 <td></td>
@@ -60,8 +60,8 @@
 <td>학선</td>
 <td>✅</td>
 <td>✅</td>
-<td></td>
-<td></td>
+<td>✅</td>
+<td>✅</td>
 <td></td>
 <td></td>
 <td></td>
@@ -80,8 +80,8 @@
 <td>희호</td>
 <td>✅</td>
 <td>✅</td>
-<td></td>
-<td></td>
+<td>✅</td>
+<td>✅</td>
 <td></td>
 <td></td>
 <td></td>
@@ -100,8 +100,8 @@
 <td>원서</td>
 <td>✅</td>
 <td>✅</td>
-<td></td>
-<td></td>
+<td>✅</td>
+<td>✅</td>
 <td></td>
 <td></td>
 <td></td>
